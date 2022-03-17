@@ -9,7 +9,7 @@ function getSportSelected()
 
     document.querySelector("#sportDescription").innerHTML = "";
 
-    let selectedDescription = data[selectedItem].description;
+    let selectedDescription = data[selectedSport].description;
     document.querySelector("#sportDescription").innerHTML += selectedDescription;
 
     console.log(selectedDescription); 
