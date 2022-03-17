@@ -10,6 +10,8 @@ function getSportSelected()
     const request = new XMLHttpRequest();
     request.open("GET",  "https://api.the-odds-api.com/v4/sports/"+ selectedSport.id +"/scores/?daysFrom=1&apiKey=bfbf9378d9a5c0f7d7889dab28d7b64a", true);
 
+    let selectedDescription = data[selectedSport].id;
+    document.querySelector("#sportDescription").innerHTML += selectedDescription;
     
     
     
